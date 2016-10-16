@@ -1,0 +1,24 @@
+struct maebot_exploration_status_t
+{
+    const int8_t EXPLORING=1;
+    const int8_t COMPLETE=2;
+
+    int64_t utime;
+
+    /*
+    * team_number is the assigned team number of the robot sending the messages.
+    */
+    int8_t team_number;
+
+    /*
+    * status is either EXPLORING or COMPLETE. It should be set to exploring
+    * until your exploration algorithm has determined the entire map has been
+    * explored.
+    */
+    int8_t status;
+
+    /*
+    * frontier_target specifies the current target for your exploration algorithm.
+    */
+    maebot_pose_t frontier_target;
+}

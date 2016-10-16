@@ -1,0 +1,10 @@
+struct tic_tac_toe_turn_t
+{
+    int64_t utime;
+
+    /*
+    * turn_number is the turn number your agent is: (a) currently taking, or (b) waiting for. Once your turn is
+    * completed, you increment the turn_number, which is the signal to the other agent to start their turn.
+    */
+    int32_t turn_number;
+}
